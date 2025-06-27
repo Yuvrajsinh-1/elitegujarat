@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gir Somnath District - Explore Gujarat</title>
+    <meta name="description" content="Discover Gir Somnath District - home to the famous Somnath Temple and the Asiatic lions of Gir Forest.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Elite Gujarat</span>
+                        <div class="logo-subtitle">Travel Information System</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn active">
+                            Districts <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                           <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="dahod.html">Dahod</a>
+                            <a href="kutch.html">kutch</a>
+                            <a href="districts.html">More Districts</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="nav-actions">
+                    <button class="action-btn" id="searchBtn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="action-btn" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="mobile-dropdown">
+                    <button class="nav-link mobile-dropdown-btn active">
+                        Districts <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content">
+                        <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="dahod.html">Dahod</a>
+                            <a href="kutch.html">kutch</a>
+                            <a href="districts.html">More Districts</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="district-hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1581852057106-0b9e9b9a4b0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&h=1080" alt="Gir Somnath District">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <a href="index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <h1 class="hero-title animate-slide-up">Gir Somnath District</h1>
+                    <p class="hero-description animate-slide-up">
+                        Home to the famous Somnath Temple and the last abode of Asiatic lions
+                    </p>
+                    <div class="hero-tags animate-slide-up">
+                        <span class="tag">Somnath Temple</span>
+                        <span class="tag">Gir Forest</span>
+                        <span class="tag">Asiatic Lions</span>
+                        <span class="tag">Beaches</span>
+                    </div>
+                </div>
+                <div class="hero-location">
+                        <button class="location-btn" onclick="openLocationMap('Gir Somnath District, Gujarat, India')">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>View District on Map</span>
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <div class="info-title">Best Time to Visit</div>
+                        <div class="info-text">October - March</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <div class="info-title">Location</div>
+                        <div class="info-text">Saurashtra Region</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-camera"></i>
+                    <div class="info-content">
+                        <div class="info-title">Attractions</div>
+                        <div class="info-text">10+ Major Sites</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="district-content">
+        <div class="container">
+            <!-- Attractions -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h2 class="section-title">Top Attractions</h2>
+                </div>
+                
+                <div class="attractions-grid">
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Somanath_mandir_%28cropped%29.jpg/1200px-Somanath_mandir_%28cropped%29.jpg" alt="Somnath Temple">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Somnath Temple</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                One of the 12 Jyotirlinga shrines of Lord Shiva, rebuilt several times after repeated destruction
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6:00 AM - 9:30 PM</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Somnath Temple, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Gir_lion-Gir_forest%2Cjunagadh%2Cgujarat%2Cindia.jpeg" alt="Gir National Park">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Gir National Park</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                The only natural habitat of the Asiatic lion with diverse flora and fauna
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 AM - 5 PM</span>
+                                </div>
+                                <div class="detail-item entry-paid">
+                                    ₹800+
+                                </div>
+                            </div>
+                              <div class="hero-location">
+                        <button class="location-btn" onclick="openLocationMap('Gir National Park, Gujarat, India')">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>View Location</span>
+                        </button>
+                    </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Diu%2CGujarat%2CIndia_%2837%29.jpg/330px-Diu%2CGujarat%2CIndia_%2837%29.jpg" alt="Diu Fort">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Diu Fort</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Massive Portuguese fort with panoramic views of the Arabian Sea
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>7 AM - 6 PM</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                              <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Diu Fort, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hotels -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 class="section-title">Recommended Hotels</h2>
+                </div>
+                
+                <div class="hotels-grid">
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="The Fern Gir Forest Resort">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">The Fern Gir Forest Resort</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Eco-friendly resort near Gir National Park with modern amenities
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Swimming Pool</span>
+                                <span class="amenity">Restaurant</span>
+                                <span class="amenity">Spa</span>
+                                <span class="amenity">WiFi</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹5,000 - ₹10,000</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 2877 288 000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos-271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Lords Inn Somnath">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">Lords Inn Somnath</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Comfortable hotel near Somnath Temple with excellent service
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Restaurant</span>
+                                <span class="amenity">AC Rooms</span>
+                                <span class="amenity">24/7 Service</span>
+                                <span class="amenity">WiFi</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹3,000 - ₹6,000</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 2876 232 000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Restaurants -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h2 class="section-title">Popular Restaurants</h2>
+                </div>
+                
+                <div class="restaurants-grid">
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Gir Pride Restaurant">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Gir Pride Restaurant</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Multi-cuisine restaurant known for its vegetarian and non-vegetarian options
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Indian Cuisine</div>
+                                    <div class="specialty">Specialty: Gujarati Thali</div>
+                                </div>
+                                <div class="price-range">₹300 - ₹800</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Sagar Kinara">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Sagar Kinara</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.1</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Beachside restaurant offering fresh seafood with ocean views
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Seafood</div>
+                                    <div class="specialty">Specialty: Prawn Masala</div>
+                                </div>
+                                <div class="price-range">₹500 - ₹1,200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-title">Elite Gujarat</span>
+                            <div class="footer-logo-subtitle">Travel Information System</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Discover the incredible beauty, rich culture, and vibrant heritage of Gujarat. 
+                        Your comprehensive guide to exploring the jewel of western India.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Districts</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Districts -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Popular Districts</h3>
+                    <ul class="footer-links">
+                        <li><a href="kutch.html">Kutch</a></li>
+                        <li><a href="ahmedabad.html">Ahmedabad</a></li>
+                        <li><a href="surat.html">Surat</a></li>
+                        <li><a href="vadodara.html">Vadodara</a></li>
+                        <li><a href="rajkot.html">Rajkot</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9054652383</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>220390116008@saffrony.ac.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Elite Gujarat. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h2>Search Gujarat</h2>
+                <button class="search-modal-close" id="searchModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-modal-body">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search districts, hotels, restaurants..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults">
+                    <div class="search-placeholder">
+                        <i class="fas fa-search"></i>
+                        <p>Start typing to search...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="district.js"></script>
+     <script src="map-integration.js"></script>
+</body>
+</html>

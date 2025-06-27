@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Elite Gujarat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Success Page Custom Styles */
+        .success-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.pexels.com/photos/3889987/pexels-photo-3889987.jpeg') no-repeat center center/cover;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .success-content {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+        }
+        
+        .success-icon {
+            font-size: 5rem;
+            color: var(--primary-500);
+            margin-bottom: 1.5rem;
+            animation: bounceGentle 2s infinite;
+        }
+        
+        .success-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .countdown {
+            margin-top: 2rem;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
+        .countdown span {
+            font-weight: bold;
+            color: var(--primary-500);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (Same as Contact Page) -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Elite Gujarat</span>
+                        <div class="logo-subtitle">Travel Information System</div>
+                    </div>
+                </a>
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="districts.html" class="nav-link">Districts</a>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Success Hero Section -->
+    <section class="success-hero">
+        <div class="container">
+            <h1 class="hero-title">Thank You!</h1>
+            <p class="hero-description">
+                We've received your message successfully.
+            </p>
+        </div>
+    </section>
+
+    <!-- Success Content -->
+    <section class="container">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Received!</h2>
+            <p>Thank you for contacting Elite Gujarat. Our team will respond to your inquiry within 24-48 hours.</p>
+            <p>Your submission reference: <strong>WEB-<span id="refNumber">GJ</span><span id="timestamp"></span></strong></p>
+            
+            <div class="success-actions">
+                <a href="index.html" class="btn btn-primary">
+                    <i class="fas fa-home"></i> Return Home
+                </a>
+                <a href="districts.html" class="btn btn-secondary">
+                    <i class="fas fa-map-marked-alt"></i> Explore Districts
+                </a>
+                <a href="gallery.html" class="btn btn-secondary">
+                    <i class="fas fa-images"></i> View Gallery
+                </a>
+            </div>
+            
+            <div class="countdown">
+                <p>You will be automatically redirected to our homepage in <span id="countdown">10</span> seconds...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as Contact Page) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Copy footer content from contact.html -->
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Generate a reference number
+        document.getElementById('timestamp').textContent = new Date().getTime().toString().slice(-4);
+        
+        // Auto-redirect after 10 seconds
+        let seconds = 10;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdown = setInterval(() => {
+            seconds--;
+            countdownElement.textContent = seconds;
+            
+            if (seconds <= 0) {
+                clearInterval(countdown);
+                window.location.href = "index.html";
+            }
+        }, 1000);
+        
+        // Mobile menu toggle (same as contact page)
+        document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+            document.querySelector('.nav-desktop').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

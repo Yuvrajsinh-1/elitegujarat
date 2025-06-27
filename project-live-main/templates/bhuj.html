@@ -1,0 +1,536 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuj District - Explore Gujarat</title>
+    <meta name="description" content="Discover Bhuj District - Gateway to Kutch with rich history, handicrafts, and traditional architecture.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Elite Gujarat</span>
+                        <div class="logo-subtitle">Travel Information System</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn active">
+                            Districts <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+<a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="dang.html">Dang</a>
+                            <a href="kutch.html">kutch</a>
+                            <a href="districts.html">More Districts</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="nav-actions">
+                    <button class="action-btn" id="searchBtn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="action-btn" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="mobile-dropdown">
+                    <button class="nav-link mobile-dropdown-btn active">
+                        Districts <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content">
+                       <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="dang.html">Dang</a>
+                            <a href="kutch.html">kutch</a>
+                            <a href="districts.html">More Districts</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="district-hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/3862139/pexels-photo-3862139.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Bhuj District">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <a href="index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <h1 class="hero-title animate-slide-up">Bhuj District</h1>
+                    <p class="hero-description animate-slide-up">
+                        Gateway to Kutch with rich history, magnificent handicrafts, and traditional architecture that tells stories of ancient civilizations
+                    </p>
+                    <div class="hero-tags animate-slide-up">
+                        <span class="tag">Aina Mahal</span>
+                        <span class="tag">Prag Mahal</span>
+                        <span class="tag">Handicrafts</span>
+                        <span class="tag">Historical Architecture</span>
+                    </div>
+                </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Bhuj District, Bhuj, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View District on Map</span>
+                                </button>
+                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <div class="info-title">Best Time to Visit</div>
+                        <div class="info-text">October - March</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <div class="info-title">Location</div>
+                        <div class="info-text">Kutch District, Gujarat</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-camera"></i>
+                    <div class="info-content">
+                        <div class="info-title">Attractions</div>
+                        <div class="info-text">4+ Historical Sites</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="district-content">
+        <div class="container">
+            <!-- Attractions -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h2 class="section-title">Top Attractions</h2>
+                </div>
+                
+                <div class="attractions-grid">
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4noTDdYTwLiaQSvKJqFlBJAjsM1gOf_OPDATTeB8KWp4ko44J4Q_vlpSBvsXNFAA1UAr7Ekjma-m-SkIsGsL3_7A2UheeyFm9RRt7jgMadFHkq0jg27pSVaO-0dE5CsCUraOHI4Peg=w135-h156-n-k-no" alt="Aina Mahal">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Aina Mahal</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Palace of mirrors showcasing exquisite 18th-century craftsmanship and royal heritage
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>9 AM - 6 PM</span>
+                                </div>
+                                <div class="detail-item entry-paid">
+                                    ₹30
+                                </div>
+                            </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Aina Mahal, BhujGujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrJxjCXxW2wdIO5m9ZkNZ9m6W0e6I5fQU5IbkPSzT129Do1GlNpsVFpiRSsSe9hPkNVUEfGUukDTqMdyFOQJ8SpfwQuPBiwA4usR0VWmhdAGqPcHE041wVnI6aXC__1V254BG4=w270-h312-n-k-no" alt="Prag Mahal">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Prag Mahal</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                19th-century palace with Italian Gothic architecture and panoramic city views
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>9 AM - 6 PM</span>
+                                </div>
+                                <div class="detail-item entry-paid">
+                                    ₹25
+                                </div>
+                            </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Prag Mahal, Bhuj, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nr-1hLtlJ_En5IPdtbJYnFBpo_xTUzHQBbWM0KI8HN-Rxe6zeimO4CVlBX9zEd4Fs4gLd5vskGN6FLFeoprxQe8o8q3pWCipJf5KjPDGwCr_qSILROKNLWN4LpE2aG-x4k80Qh4=w270-h312-n-k-no" alt="Kutch Museum">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Kutch Museum</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Oldest museum in Gujarat showcasing tribal artifacts and local history
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>10 AM - 5 PM</span>
+                                </div>
+                                <div class="detail-item entry-paid">
+                                    ₹15
+                                </div>
+                            </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Kutch Museum, Bhujujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcT-myk0hYVqTPuMBC6dAlAgHKTHrlU03ydwZaM53cw0fZLmngd-dC_3EQ69jjpmdVlFZSDjv3zKMkFvZQQnxbTaiyOnOGgceQDqTy4D_w" alt="Hamirsar Lake">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Hamirsar Lake</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.0</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Artificial lake in the heart of Bhuj, perfect for evening walks and relaxation
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>All day</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                              <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Hamirsar Lake, Bhuj, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hotels -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 class="section-title">Recommended Hotels</h2>
+                </div>
+                
+                <div class="hotels-grid">
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Hotel Prince Palace">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">Hotel Prince Palace</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Comfortable accommodation in the heart of Bhuj city with modern amenities
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">WiFi</span>
+                                <span class="amenity">Restaurant</span>
+                                <span class="amenity">AC Rooms</span>
+                                <span class="amenity">Parking</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹2,000 - ₹3,500</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 2832 250370</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Regenta Resort Bhuj">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">Regenta Resort Bhuj</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Luxury resort with traditional Kutchi architecture and modern facilities
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Swimming Pool</span>
+                                <span class="amenity">Spa</span>
+                                <span class="amenity">Multi-cuisine Restaurant</span>
+                                <span class="amenity">Conference Hall</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹4,000 - ₹7,000</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 2832 664000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Restaurants -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h2 class="section-title">Popular Restaurants</h2>
+                </div>
+                
+                <div class="restaurants-grid">
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Green Rock Restaurant">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Green Rock Restaurant</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Multi-cuisine restaurant known for authentic Gujarati thali and North Indian dishes
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Multi-cuisine</div>
+                                    <div class="specialty">Specialty: Gujarati Thali</div>
+                                </div>
+                                <div class="price-range">₹250 - ₹500</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Flavours Restaurant">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Flavours Restaurant</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.1</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Popular for traditional Kutchi cuisine and local delicacies in a cozy atmosphere
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Kutchi Cuisine</div>
+                                    <div class="specialty">Specialty: Kutchi Dabeli</div>
+                                </div>
+                                <div class="price-range">₹200 - ₹400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-title">Elite Gujarat</span>
+                            <div class="footer-logo-subtitle">Travel Information System</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Discover the incredible beauty, rich culture, and vibrant heritage of Gujarat. 
+                        Your comprehensive guide to exploring the jewel of western India.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Districts</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Districts -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Popular Districts</h3>
+                    <ul class="footer-links">
+                        <li><a href="kutch.html">Kutch</a></li>
+                        <li><a href="bhuj.html">Bhuj</a></li>
+                        <li><a href="dwarka.html">Dwarka</a></li>
+                        <li><a href="junagadh.html">Junagadh</a></li>
+                        <li><a href="ahmedabad.html">Ahmedabad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                       
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9054652383</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>220390116008@saffrony.ac.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Elite Gujarat. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h2>Search Gujarat</h2>
+                <button class="search-modal-close" id="searchModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-modal-body">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search districts, hotels, restaurants..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults">
+                    <div class="search-placeholder">
+                        <i class="fas fa-search"></i>
+                        <p>Start typing to search...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="district.js"></script>
+    <script src="map-integration.js"></script>
+</body>
+</html>
