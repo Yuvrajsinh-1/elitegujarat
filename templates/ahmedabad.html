@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmedabad District - Explore Gujarat</title>
+    <meta name="description" content="Discover Ahmedabad District - UNESCO World Heritage city with stunning architecture and vibrant street food.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Elite Gujarat</span>
+                        <div class="logo-subtitle">Travel Information System</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn active">
+                            Districts <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="anand.html">Anand</a>
+                            <a href="aravalli.html">Aravalli</a>
+                            <a href="districts.html">More Districts</a>
+                            
+                           
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="nav-actions">
+                    <button class="action-btn" id="searchBtn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="action-btn" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="mobile-dropdown">
+                    <button class="nav-link mobile-dropdown-btn active">
+                        Districts <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content">
+                       <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="anand.html">Anand</a>
+                            <a href="aravalli.html">Aravalli</a>
+                            <a href="districts.html">More Districts</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="district-hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/3889987/pexels-photo-3889987.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop" alt="Ahmedabad District">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <a href="index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <h1 class="hero-title animate-slide-up">Ahmedabad District</h1>
+                    <p class="hero-description animate-slide-up">
+                        UNESCO World Heritage city with stunning architecture, vibrant street food, and the legacy of Mahatma Gandhi
+                    </p>
+                    <div class="hero-tags animate-slide-up">
+                        <span class="tag">Sabarmati Ashram</span>
+                        <span class="tag">Adalaj Stepwell</span>
+                        <span class="tag">Heritage Walk</span>
+                        <span class="tag">Street Food</span>
+                    </div>
+                </div>
+                <div class="hero-location">
+                        <button class="location-btn" onclick="openLocationMap('Ahmedabad District, Gujarat, India')">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>View District on Map</span>
+                        </button>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <div class="info-title">Best Time to Visit</div>
+                        <div class="info-text">November - February</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <div class="info-title">Location</div>
+                        <div class="info-text">Central Gujarat</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-camera"></i>
+                    <div class="info-content">
+                        <div class="info-title">Attractions</div>
+                        <div class="info-text">8+ Heritage Sites</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="district-content">
+        <div class="container">
+            <!-- Attractions -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h2 class="section-title">Heritage Attractions</h2>
+                </div>
+                
+                <div class="attractions-grid">
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqcUCAy9ERebByqIUBKyuLKNKo-BdJmiMvnO1PfAqsvXbdOgo2m1-oGhr1H5ImkrvGMwThJWxI-daKiwTVXd7bK1pBk8QtoPomTKxLKZNUmUg7bfyZTEBnvTChOrAMoA0lM-ywlkA=s1360-w1360-h1020-rw" alt="Sabarmati Ashram">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Sabarmati Ashram</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Gandhi's residence for 13 years, now a museum showcasing his life and philosophy
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>8:30 AM - 6:30 PM</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Sabarmati Ashram, Ahmedabad, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nqDrChl5vnYdAN6MHbekZa3wYtuzAamJEDCUmnBzaVL8VQbDzl08gFC1qdmeo6Jh1bTFUEfNdeYEpZRyQGr6xLHOGWquJVti5dXCc-fkYKnhb-blJ4dIgL_oF0yfL6VotuDHXj3=s1360-w1360-h1020-rw" alt="Adalaj Stepwell">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Adalaj Stepwell</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Magnificent 15th-century stepwell with intricate Indo-Islamic architecture
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>9 AM - 6 PM</span>
+                                </div>
+                                <div class="detail-item entry-paid">
+                                    ₹25
+                                </div>
+                            </div>
+                              <div class="hero-location">
+                        <button class="location-btn" onclick="openLocationMap('Adalaj Stepwell, Gujarat, India')">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>View Location</span>
+                        </button>
+                    </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Jama_Masjid%2C_Ahmedabad_01.jpg/1920px-Jama_Masjid%2C_Ahmedabad_01.jpg" alt="Jama Masjid">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Jama Masjid</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                15th-century mosque with stunning yellow sandstone architecture
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>All day (Prayer times)</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                              <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Jama Masjid, Ahmedabad, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hotels -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 class="section-title">Recommended Hotels</h2>
+                </div>
+                
+                <div class="hotels-grid">
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="The House of MG">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">The House of MG</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.6</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Heritage hotel in old city with traditional architecture and modern amenities
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Heritage Property</span>
+                                <span class="amenity">Restaurant</span>
+                                <span class="amenity">Spa</span>
+                                <span class="amenity">WiFi</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹4,000 - ₹8,000</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 79 2550 6946</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Hyatt Regency Ahmedabad">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">Hyatt Regency Ahmedabad</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Luxury hotel with modern facilities and excellent dining options
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Swimming Pool</span>
+                                <span class="amenity">Fitness Center</span>
+                                <span class="amenity">Multiple Restaurants</span>
+                                <span class="amenity">Business Center</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹6,000 - ₹12,000</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 79 6666 1234</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Restaurants -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h2 class="section-title">Popular Restaurants</h2>
+                </div>
+                
+                <div class="restaurants-grid">
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Agashiye Restaurant">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Agashiye Restaurant</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Rooftop restaurant serving authentic Gujarati thali in traditional ambiance
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Gujarati Cuisine</div>
+                                    <div class="specialty">Specialty: Traditional Thali</div>
+                                </div>
+                                <div class="price-range">₹800 - ₹1,200</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Manek Chowk">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Manek Chowk</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Famous street food market with variety of local delicacies and snacks
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Street Food</div>
+                                    <div class="specialty">Specialty: Pav Bhaji, Dosa</div>
+                                </div>
+                                <div class="price-range">₹100 - ₹300</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-title">Elite Gujarat</span>
+                            <div class="footer-logo-subtitle">Travel Information System</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Discover the incredible beauty, rich culture, and vibrant heritage of Gujarat. 
+                        Your comprehensive guide to exploring the jewel of western India.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Districts</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Districts -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Popular Districts</h3>
+                    <ul class="footer-links">
+                        <li><a href="kutch.html">Kutch</a></li>
+                        <li><a href="ahmedabad.html">Ahmedabad</a></li>
+                        <li><a href="surat.html">Surat</a></li>
+                        <li><a href="vadodara.html">Vadodara</a></li>
+                        <li><a href="rajkot.html">Rajkot</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9054652383</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>220390116008@saffrony.ac.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Elite Gujarat. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h2>Search Gujarat</h2>
+                <button class="search-modal-close" id="searchModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-modal-body">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search districts, hotels, restaurants..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults">
+                    <div class="search-placeholder">
+                        <i class="fas fa-search"></i>
+                        <p>Start typing to search...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="district.js"></script>
+    <script src="map-integration.js"></script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwarka District - Explore Gujarat</title>
+    <meta name="description" content="Discover Dwarka District - Holy city of Lord Krishna with ancient temples and spiritual significance.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="logo-text">
+                        <span class="logo-title">Elite Gujarat</span>
+                        <div class="logo-subtitle">Travel Information System</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <div class="dropdown">
+                        <button class="nav-link dropdown-btn active">
+                            Districts <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                           <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="dahod.html">Dahod</a>
+                            <a href="kutch.html">kutch</a>
+                            <a href="districts.html">More Districts</a>
+                        </div>
+                    </div>
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="nav-actions">
+                    <button class="action-btn" id="searchBtn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="action-btn" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="index.html" class="nav-link">Home</a>
+                <div class="mobile-dropdown">
+                    <button class="nav-link mobile-dropdown-btn active">
+                        Districts <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-content">
+                        <a href="dwarka.html">Dwarka</a>
+                            <a href="amreli.html">Amreli</a>
+                            <a href="dahod.html">Dahod</a>
+                            <a href="kutch.html">kutch</a>
+                            <a href="districts.html">More Districts</a>
+                    </div>
+                </div>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="district-hero">
+        <div class="hero-bg">
+            <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/dwarkadhish-temple/Dwarkadhish-Temple-1.jpg" alt="Dwarka District">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <a href="index.html" class="back-link">
+                        <i class="fas fa-arrow-left"></i>
+                        <span>Back to Home</span>
+                    </a>
+                    <h1 class="hero-title animate-slide-up">Dwarka District</h1>
+                    <p class="hero-description animate-slide-up">
+                        Holy city of Lord Krishna with ancient temples, spiritual significance, and divine atmosphere that attracts millions of devotees
+                    </p>
+                    <div class="hero-tags animate-slide-up">
+                        <span class="tag">Dwarkadhish Temple</span>
+                        <span class="tag">Nageshwar Jyotirlinga</span>
+                        <span class="tag">Rukmini Temple</span>
+                        <span class="tag">Spiritual Journey</span>
+                    </div>
+                </div>
+                  <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Dwarka District, Ahmedabad, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View District On Map</span>
+                                </button>
+                            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="info-content">
+                        <div class="info-title">Best Time to Visit</div>
+                        <div class="info-text">October - March</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="info-content">
+                        <div class="info-title">Location</div>
+                        <div class="info-text">Devbhumi Dwarka, Gujarat</div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-camera"></i>
+                    <div class="info-content">
+                        <div class="info-title">Attractions</div>
+                        <div class="info-text">5+ Sacred Sites</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="district-content">
+        <div class="container">
+            <!-- Attractions -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h2 class="section-title">Sacred Attractions</h2>
+                </div>
+                
+                <div class="attractions-grid">
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/dwarkadhish-temple/Dwarkadhish-Temple-1.jpg" alt="Dwarkadhish Temple">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Dwarkadhish Temple</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Main temple dedicated to Lord Krishna, one of the Char Dham pilgrimage sites
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>5 AM - 12 PM, 5 PM - 9 PM</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                              <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Dwarkadhish Temple, Dwarka, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Nageshwar.JPG/500px-Nageshwar.JPG" alt="Nageshwar Jyotirlinga">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Nageshwar Jyotirlinga</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                One of the 12 Jyotirlinga shrines of Lord Shiva with massive statue
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 AM - 12 PM, 5 PM - 9 PM</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                             <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Nageshwar Jyotirlinga, Dwarka, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://www.gujarattourism.com/content/dam/gujrattourism/images/religious-sites/rukmini-temple/Rukmini-Temple-Banner.jpg" alt="Rukmini Temple">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Rukmini Temple</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.5</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Temple dedicated to Lord Krishna's wife with beautiful architecture
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 AM - 12 PM, 4 PM - 8 PM</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                            <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Rukmini Temple, Dwarka, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://www.gujarattourism.com/content/gujrattourism/en/saurashtra/devbhoomi-dwarka/bet-dwarka/_jcr_content/root/responsivegrid/detailbannercrop.coreimg.jpeg/1715666247036/okha-1.jpeg" alt="Bet Dwarka">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Bet Dwarka</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Island temple accessible by boat, believed to be Krishna's residence
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Boat timings vary</span>
+                                </div>
+                                <div class="detail-item entry-paid">
+                                    ₹50 (Boat)
+                                </div>
+                            </div>
+                            <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Bet Dwarka, Dwarka, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="attraction-card animate-slide-up">
+                        <div class="attraction-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Gopi_Talav_5.jpg/500px-Gopi_Talav_5.jpg" alt="Gopi Talav">
+                        </div>
+                        <div class="attraction-content">
+                            <div class="attraction-header">
+                                <h3 class="attraction-name">Gopi Talav</h3>
+                                <div class="attraction-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <p class="attraction-description">
+                                Sacred pond where Krishna's gopis are said to have performed rituals
+                            </p>
+                            <div class="attraction-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>All day</span>
+                                </div>
+                                <div class="detail-item entry-free">
+                                    Free Entry
+                                </div>
+                            </div>
+                        </div>
+                         <div class="attraction-actions">
+                                <button class="location-btn" onclick="openLocationMap('Gopi Talav, Dwarka, Gujarat, India')">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>View Location</span>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hotels -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h2 class="section-title">Recommended Hotels</h2>
+                </div>
+                
+                <div class="hotels-grid">
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271619/pexels-photo-271619.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Hotel Dwarka Residency">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">Hotel Dwarka Residency</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.3</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Comfortable stay near Dwarkadhish Temple with modern amenities
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Temple View</span>
+                                <span class="amenity">Restaurant</span>
+                                <span class="amenity">AC Rooms</span>
+                                <span class="amenity">WiFi</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹1,800 - ₹3,200</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 2892 234567</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card animate-slide-up">
+                        <div class="hotel-image">
+                            <img src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Dwarkadhish Lords Eco Inn">
+                        </div>
+                        <div class="hotel-content">
+                            <div class="hotel-header">
+                                <h3 class="hotel-name">Dwarkadhish Lords Eco Inn</h3>
+                                <div class="hotel-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.1</span>
+                                </div>
+                            </div>
+                            <p class="hotel-description">
+                                Eco-friendly accommodation with spiritual ambiance and good facilities
+                            </p>
+                            <div class="hotel-amenities">
+                                <span class="amenity">Eco-friendly</span>
+                                <span class="amenity">Vegetarian Restaurant</span>
+                                <span class="amenity">Prayer Room</span>
+                                <span class="amenity">Garden</span>
+                            </div>
+                            <div class="hotel-footer">
+                                <div class="hotel-price">₹2,500 - ₹4,000</div>
+                                <div class="hotel-contact">
+                                    <i class="fas fa-phone"></i>
+                                    <span>+91 2892 235678</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Restaurants -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h2 class="section-title">Popular Restaurants</h2>
+                </div>
+                
+                <div class="restaurants-grid">
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Govinda Restaurant">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Govinda Restaurant</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.4</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Pure vegetarian restaurant serving traditional Gujarati thali and prasadam
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Pure Vegetarian</div>
+                                    <div class="specialty">Specialty: Gujarati Thali</div>
+                                </div>
+                                <div class="price-range">₹150 - ₹300</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card animate-slide-up">
+                        <div class="restaurant-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" alt="Amrutras Restaurant">
+                        </div>
+                        <div class="restaurant-content">
+                            <div class="restaurant-header">
+                                <h3 class="restaurant-name">Amrutras Restaurant</h3>
+                                <div class="restaurant-rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.2</span>
+                                </div>
+                            </div>
+                            <p class="restaurant-description">
+                                Family restaurant known for authentic Kathiawadi cuisine and sweets
+                            </p>
+                            <div class="restaurant-details">
+                                <div class="restaurant-info">
+                                    <div class="cuisine-type">Kathiawadi</div>
+                                    <div class="specialty">Specialty: Kathiawadi Thali</div>
+                                </div>
+                                <div class="price-range">₹200 - ₹400</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="footer-logo-text">
+                            <span class="footer-logo-title">Elite Gujarat</span>
+                            <div class="footer-logo-subtitle">Travel Information System</div>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Discover the incredible beauty, rich culture, and vibrant heritage of Gujarat. 
+                        Your comprehensive guide to exploring the jewel of western India.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Districts</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Districts -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Popular Districts</h3>
+                    <ul class="footer-links">
+                        <li><a href="kutch.html">Kutch</a></li>
+                        <li><a href="bhuj.html">Bhuj</a></li>
+                        <li><a href="dwarka.html">Dwarka</a></li>
+                        <li><a href="junagadh.html">Junagadh</a></li>
+                        <li><a href="ahmedabad.html">Ahmedabad</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="contact-info">
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9054652383</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>220390116008@saffrony.ac.in</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Elite Gujarat. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-modal-content">
+            <div class="search-modal-header">
+                <h2>Search Gujarat</h2>
+                <button class="search-modal-close" id="searchModalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="search-modal-body">
+                <div class="search-input-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search districts, hotels, restaurants..." autocomplete="off">
+                </div>
+                <div class="search-results" id="searchResults">
+                    <div class="search-placeholder">
+                        <i class="fas fa-search"></i>
+                        <p>Start typing to search...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="district.js"></script>
+    <script src="map-integration.js"></script>
+</body>
+</html>
