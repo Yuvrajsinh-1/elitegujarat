@@ -15,7 +15,22 @@ def other_pages(page):
     except:
         return render_template('404.html'), 404
 
-# Optional: 404 page
-@app.errorhandler(404)
-def not_found(e):
-    return render_template('404.html'), 404
+@app.route('/submit-contact', methods=['POST'])
+def submit_contact():
+    first_name = request.form.get('firstName')
+    last_name = request.form.get('lastName')
+    email = request.form.get('email')
+    phone = request.form.get('phone')
+    subject = request.form.get('subject')
+    message = request.form.get('message')
+
+    print("Contact form submitted:")
+    print("Name:", first_name, last_name)
+    print("Email:", email)
+    print("Phone:", phone)
+    print("Subject:", subject)
+    print("Message:", message)
+
+    # ✅ You can store in a database or send an email here
+
+    return redirect(url_for('contact'))  # Redirect after form submission
