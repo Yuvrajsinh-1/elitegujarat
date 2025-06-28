@@ -11,7 +11,7 @@ def home():
 @app.route('/<page>')
 def other_pages(page):
     try:
-        return render_template(f'{page}.html')
+        return render_template(f'{page}')
     except:
         return render_template('404.html'), 404
 
